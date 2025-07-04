@@ -105,7 +105,7 @@ body {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 70%;
+  width: 80%;
   height: 100vh;
   background: #EFEFE2;
   border-right: 2px solid black;
@@ -118,6 +118,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 
 .mobile-sidebar .social-links {
   margin: 0;
