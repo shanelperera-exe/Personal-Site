@@ -615,7 +615,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem; 
-  
+  justify-items: center;
   max-width: 1200px; 
   padding: 2rem;
   margin: 4rem auto 4rem auto;     
@@ -640,7 +640,6 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
-
   max-width: 200px;
   max-height: 200px;
   width: 100%;       
@@ -1134,6 +1133,7 @@ body {
 
   @media (max-width: 767px) {
     .about-image {
+      order: -1;
       max-width: 100%;
       width: 90vw;
       height: auto;
@@ -1143,16 +1143,17 @@ body {
   }
 
   .about-text-box {
-    width: 90%;
+    width: 95%;
     min-width: unset;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .about-tags-box {
     position: static;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
@@ -1164,28 +1165,31 @@ body {
     padding: 1rem;
     font-size: 1.1rem;
     text-align: center;
-    margin-right: 2rem;
+    margin: 0 auto; /* Center horizontally */
   }
-
+  
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr); /* only 2 items per row */
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
     gap: 1rem;
     padding: 1rem;
     margin: 2rem auto;
     width: 100%;
     box-sizing: border-box;
+    justify-items: center;
   }
 
   .skill {
-    max-width: 150px;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+    max-width: 180px;  /* smaller max width */
+    max-height: 180px; /* keep square */
+    width: 100%;       /* full width of grid cell */
+    font-size: 1.25rem; /* slightly smaller text */
+    padding-bottom: 2rem;  /* a bit less padding */
   }
 
   .skill-img {
-    width: 80px;
-    height: 80px;
+    width: 100px;  /* smaller image */
+    height: 100px;
+    margin-top: 2rem;
   }
 
   .project-card {
