@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+* { outline: 1px solid red; }
+
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -1141,10 +1143,23 @@ body {
   }
 
   .about-text-box {
-    width: 90%;
     min-width: unset;
-    margin: 0 auto;
+    width: 90%;
+  }
+
+  .about-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .about-text-box {
+    min-width: unset;
+    width: 100%;
     padding: 1.5rem;
+    margin: 0;
+    text-align: center;
   }
 
   .about-tags-box {
@@ -1152,17 +1167,14 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0 auto;
     gap: 1rem;
   }
 
   .tag-box {
     width: 90%;
-    padding: 1rem;
-    font-size: 1.1rem;
     text-align: center;
-    margin-right: 2rem;
+    margin: 0 auto;
   }
 
   .skills-grid {
