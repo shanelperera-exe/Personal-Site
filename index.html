@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shanel Perera</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="mobile-brand">SHANEL<br>PERERA</div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <ul class="social-links desktop-only">
+          <li>
+            <a href="https://github.com/shanelperera-exe" target="_blank" aria-label="GitHub">
+              <img src="data:image/svg+xml,%3csvg%20width='81'%20height='79'%20viewBox='0%200%2081%2079'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M40.1526%200C17.9683%200%200%2017.988%200%2040.1966C0%2057.9837%2011.4937%2073.0072%2027.4543%2078.3332C29.462%2078.6849%2030.2148%2077.479%2030.2148%2076.4239C30.2148%2075.4692%2030.1646%2072.3037%2030.1646%2068.9373C20.0763%2070.7963%2017.4664%2066.4752%2016.6633%2064.2141C16.2116%2063.0585%2014.2542%2059.491%2012.5477%2058.5364C11.1423%2057.7827%209.13472%2055.9236%2012.4975%2055.8733C15.6595%2055.8231%2017.9181%2058.7876%2018.671%2059.9935C22.2847%2066.0732%2028.0566%2064.3649%2030.3654%2063.3097C30.7167%2060.6969%2031.7707%2058.9383%2032.9251%2057.9334C23.9912%2056.9285%2014.6557%2053.4615%2014.6557%2038.0863C14.6557%2033.7149%2016.2116%2030.0972%2018.7713%2027.2835C18.3698%2026.2786%2016.9645%2022.1584%2019.1729%2016.6314C19.1729%2016.6314%2022.5356%2015.5762%2030.2148%2020.7515C33.427%2019.8471%2036.84%2019.3949%2040.253%2019.3949C43.666%2019.3949%2047.0789%2019.8471%2050.2911%2020.7515C57.9703%2015.526%2061.3331%2016.6314%2061.3331%2016.6314C63.5415%2022.1584%2062.1362%2026.2786%2061.7346%2027.2835C64.2944%2030.0972%2065.8503%2033.6647%2065.8503%2038.0863C65.8503%2053.5118%2056.4646%2056.9285%2047.5306%2057.9334C48.9862%2059.1896%2050.2409%2061.6014%2050.2409%2065.3698C50.2409%2070.7461%2050.1908%2075.0672%2050.1908%2076.4239C50.1908%2077.479%2050.9436%2078.7352%2052.9512%2078.3332C60.9235%2075.6413%2067.8512%2070.5133%2072.7585%2063.6716C77.6658%2056.8299%2080.3053%2048.6194%2080.3052%2040.1966C80.3052%2017.988%2062.3369%200%2040.1526%200Z'%20fill='black'/%3e%3c/svg%3e" alt="GitHub Icon" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shanel-perera-635955313/" target="_blank" aria-label="LinkedIn">
+              <img src="data:image/svg+xml,%3csvg%20width='78'%20height='78'%20viewBox='0%200%2078%2078'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M71.7906%200.000538991H6.09873C5.36029%20-0.00965496%204.62707%200.12484%203.94093%200.396343C3.25478%200.667847%202.62917%201.07104%202.09981%201.5829C1.57046%202.09475%201.14772%202.70525%200.855756%203.37951C0.56379%204.05378%200.408308%204.77861%200.398193%205.51261V71.5804C0.408308%2072.3144%200.56379%2073.0392%200.855756%2073.7135C1.14772%2074.3877%201.57046%2074.9982%202.09981%2075.5101C2.62917%2076.0219%203.25478%2076.4251%203.94093%2076.6966C4.62707%2076.9681%205.36029%2077.1026%206.09873%2077.0924H71.7906C72.5291%2077.1026%2073.2623%2076.9681%2073.9485%2076.6966C74.6346%2076.4251%2075.2602%2076.0219%2075.7896%2075.5101C76.3189%2074.9982%2076.7417%2074.3877%2077.0336%2073.7135C77.3256%2073.0392%2077.4811%2072.3144%2077.4912%2071.5804V5.51261C77.4811%204.77861%2077.3256%204.05378%2077.0336%203.37951C76.7417%202.70525%2076.3189%202.09475%2075.7896%201.5829C75.2602%201.07104%2074.6346%200.667847%2073.9485%200.396343C73.2623%200.12484%2072.5291%20-0.00965496%2071.7906%200.000538991ZM23.782%2064.5265H12.1483V29.8351H23.782V64.5265ZM17.9652%2024.9783C16.3607%2024.9783%2014.822%2024.3448%2013.6875%2023.2171C12.553%2022.0894%2011.9156%2020.5599%2011.9156%2018.9651C11.9156%2017.3704%2012.553%2015.8409%2013.6875%2014.7132C14.822%2013.5855%2016.3607%2012.952%2017.9652%2012.952C18.8171%2012.8559%2019.6799%2012.9399%2020.497%2013.1982C21.314%2013.4566%2022.067%2013.8836%2022.7065%2014.4513C23.3461%2015.0189%2023.8578%2015.7145%2024.2081%2016.4924C24.5585%2017.2702%2024.7396%2018.1129%2024.7396%2018.9651C24.7396%2019.8174%2024.5585%2020.6601%2024.2081%2021.4379C23.8578%2022.2158%2023.3461%2022.9114%2022.7065%2023.479C22.067%2024.0467%2021.314%2024.4737%2020.497%2024.7321C19.6799%2024.9904%2018.8171%2025.0744%2017.9652%2024.9783ZM65.7411%2064.5265H54.1073V45.9088C54.1073%2041.2447%2052.4398%2038.1996%2048.2129%2038.1996C46.9047%2038.2091%2045.6309%2038.617%2044.5632%2039.3682C43.4954%2040.1194%2042.6849%2041.1779%2042.2409%2042.4011C41.9375%2043.3071%2041.806%2044.2612%2041.8531%2045.2149V64.4879H30.2194V29.7966H41.8531V34.6919C42.91%2032.8691%2044.4471%2031.3674%2046.2989%2030.3486C48.1508%2029.3297%2050.2471%2028.8323%2052.3623%2028.91C60.1181%2028.91%2065.7411%2033.8824%2065.7411%2044.5597V64.5265Z'%20fill='black'/%3e%3c/svg%3e" alt="LinkedIn Icon" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="/assets/Shanel Perera Resume-C0vTFWF1.pdf" download class="btn-pill" aria-label="Download Resume" class="icon-resume"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+              <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+              </svg><span style="margin-left: 0.5rem;">Download Resume</span>
+            </a>
+          </li>
+        </ul>
+
+      <input type="checkbox" id="nav-toggle" hidden>
+      <label for="nav-toggle" class="hamburger" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </label>
+
+      <div class="mobile-sidebar">
+        <ul class="mobile-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/shanelperera-exe" target="_blank" aria-label="GitHub">
+              <img src="data:image/svg+xml,%3csvg%20width='81'%20height='79'%20viewBox='0%200%2081%2079'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M40.1526%200C17.9683%200%200%2017.988%200%2040.1966C0%2057.9837%2011.4937%2073.0072%2027.4543%2078.3332C29.462%2078.6849%2030.2148%2077.479%2030.2148%2076.4239C30.2148%2075.4692%2030.1646%2072.3037%2030.1646%2068.9373C20.0763%2070.7963%2017.4664%2066.4752%2016.6633%2064.2141C16.2116%2063.0585%2014.2542%2059.491%2012.5477%2058.5364C11.1423%2057.7827%209.13472%2055.9236%2012.4975%2055.8733C15.6595%2055.8231%2017.9181%2058.7876%2018.671%2059.9935C22.2847%2066.0732%2028.0566%2064.3649%2030.3654%2063.3097C30.7167%2060.6969%2031.7707%2058.9383%2032.9251%2057.9334C23.9912%2056.9285%2014.6557%2053.4615%2014.6557%2038.0863C14.6557%2033.7149%2016.2116%2030.0972%2018.7713%2027.2835C18.3698%2026.2786%2016.9645%2022.1584%2019.1729%2016.6314C19.1729%2016.6314%2022.5356%2015.5762%2030.2148%2020.7515C33.427%2019.8471%2036.84%2019.3949%2040.253%2019.3949C43.666%2019.3949%2047.0789%2019.8471%2050.2911%2020.7515C57.9703%2015.526%2061.3331%2016.6314%2061.3331%2016.6314C63.5415%2022.1584%2062.1362%2026.2786%2061.7346%2027.2835C64.2944%2030.0972%2065.8503%2033.6647%2065.8503%2038.0863C65.8503%2053.5118%2056.4646%2056.9285%2047.5306%2057.9334C48.9862%2059.1896%2050.2409%2061.6014%2050.2409%2065.3698C50.2409%2070.7461%2050.1908%2075.0672%2050.1908%2076.4239C50.1908%2077.479%2050.9436%2078.7352%2052.9512%2078.3332C60.9235%2075.6413%2067.8512%2070.5133%2072.7585%2063.6716C77.6658%2056.8299%2080.3053%2048.6194%2080.3052%2040.1966C80.3052%2017.988%2062.3369%200%2040.1526%200Z'%20fill='black'/%3e%3c/svg%3e" alt="GitHub Icon" class="social-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/shanel-perera-635955313/" target="_blank" aria-label="LinkedIn">
+              <img src="data:image/svg+xml,%3csvg%20width='78'%20height='78'%20viewBox='0%200%2078%2078'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M71.7906%200.000538991H6.09873C5.36029%20-0.00965496%204.62707%200.12484%203.94093%200.396343C3.25478%200.667847%202.62917%201.07104%202.09981%201.5829C1.57046%202.09475%201.14772%202.70525%200.855756%203.37951C0.56379%204.05378%200.408308%204.77861%200.398193%205.51261V71.5804C0.408308%2072.3144%200.56379%2073.0392%200.855756%2073.7135C1.14772%2074.3877%201.57046%2074.9982%202.09981%2075.5101C2.62917%2076.0219%203.25478%2076.4251%203.94093%2076.6966C4.62707%2076.9681%205.36029%2077.1026%206.09873%2077.0924H71.7906C72.5291%2077.1026%2073.2623%2076.9681%2073.9485%2076.6966C74.6346%2076.4251%2075.2602%2076.0219%2075.7896%2075.5101C76.3189%2074.9982%2076.7417%2074.3877%2077.0336%2073.7135C77.3256%2073.0392%2077.4811%2072.3144%2077.4912%2071.5804V5.51261C77.4811%204.77861%2077.3256%204.05378%2077.0336%203.37951C76.7417%202.70525%2076.3189%202.09475%2075.7896%201.5829C75.2602%201.07104%2074.6346%200.667847%2073.9485%200.396343C73.2623%200.12484%2072.5291%20-0.00965496%2071.7906%200.000538991ZM23.782%2064.5265H12.1483V29.8351H23.782V64.5265ZM17.9652%2024.9783C16.3607%2024.9783%2014.822%2024.3448%2013.6875%2023.2171C12.553%2022.0894%2011.9156%2020.5599%2011.9156%2018.9651C11.9156%2017.3704%2012.553%2015.8409%2013.6875%2014.7132C14.822%2013.5855%2016.3607%2012.952%2017.9652%2012.952C18.8171%2012.8559%2019.6799%2012.9399%2020.497%2013.1982C21.314%2013.4566%2022.067%2013.8836%2022.7065%2014.4513C23.3461%2015.0189%2023.8578%2015.7145%2024.2081%2016.4924C24.5585%2017.2702%2024.7396%2018.1129%2024.7396%2018.9651C24.7396%2019.8174%2024.5585%2020.6601%2024.2081%2021.4379C23.8578%2022.2158%2023.3461%2022.9114%2022.7065%2023.479C22.067%2024.0467%2021.314%2024.4737%2020.497%2024.7321C19.6799%2024.9904%2018.8171%2025.0744%2017.9652%2024.9783ZM65.7411%2064.5265H54.1073V45.9088C54.1073%2041.2447%2052.4398%2038.1996%2048.2129%2038.1996C46.9047%2038.2091%2045.6309%2038.617%2044.5632%2039.3682C43.4954%2040.1194%2042.6849%2041.1779%2042.2409%2042.4011C41.9375%2043.3071%2041.806%2044.2612%2041.8531%2045.2149V64.4879H30.2194V29.7966H41.8531V34.6919C42.91%2032.8691%2044.4471%2031.3674%2046.2989%2030.3486C48.1508%2029.3297%2050.2471%2028.8323%2052.3623%2028.91C60.1181%2028.91%2065.7411%2033.8824%2065.7411%2044.5597V64.5265Z'%20fill='black'/%3e%3c/svg%3e" alt="LinkedIn Icon" class="social-icon" />
+            </a>
+          </li>
+        </ul>
+        <div>
+          <a href="/assets/Shanel Perera Resume-C0vTFWF1.pdf" download class="btn-pill" aria-label="Download Resume" class="icon-resume"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+            <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+            </svg><span style="margin-left: 0.5rem;">Download Resume</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="main-container" id="home">
+     <div class="intro-text">
+        <p class="hello-text">Hello</p>
+        <p class="name-intro">My name is</p>
+      </div>
+
+    <div class="name-box">
+      <h1 class="name">SHANEL<br><span>PERERA</span></h1>
+    </div>
+  </div>
+
+  <section class="about-section" id="about">
+    <div class="section-title about-title">
+      <img src="data:image/svg+xml,%3csvg%20width='81'%20height='81'%20viewBox='0%200%2081%2081'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.10093%209.10093C9.2355%208.96669%209.39521%208.8603%209.57093%208.78783C9.74665%208.71536%209.93492%208.67823%2010.125%208.67857H18.8036C19.9544%208.67857%2021.0581%208.2214%2021.8719%207.40762C22.6857%206.59385%2023.1429%205.49014%2023.1429%204.33929C23.1429%203.18844%2022.6857%202.08472%2021.8719%201.27095C21.0581%200.457173%2019.9544%200%2018.8036%200L10.125%200C7.43968%200%204.86435%201.06674%202.96554%202.96554C1.06674%204.86435%200%207.43968%200%2010.125L0%2018.8036C0%2019.9544%200.457173%2021.0581%201.27095%2021.8719C2.08472%2022.6857%203.18844%2023.1429%204.33929%2023.1429C5.49014%2023.1429%206.59385%2022.6857%207.40762%2021.8719C8.2214%2021.0581%208.67857%2019.9544%208.67857%2018.8036V10.125C8.67823%209.93492%208.71536%209.74665%208.78783%209.57093C8.8603%209.39521%208.96669%209.2355%209.10093%209.10093ZM81%2062.1964C81%2061.0456%2080.5428%2059.9419%2079.729%2059.1281C78.9153%2058.3143%2077.8116%2057.8571%2076.6607%2057.8571C75.5099%2057.8571%2074.4062%2058.3143%2073.5924%2059.1281C72.7786%2059.9419%2072.3214%2061.0456%2072.3214%2062.1964V70.875C72.3214%2071.2586%2072.169%2071.6265%2071.8978%2071.8978C71.6265%2072.169%2071.2586%2072.3214%2070.875%2072.3214H62.1964C61.0456%2072.3214%2059.9419%2072.7786%2059.1281%2073.5924C58.3143%2074.4062%2057.8571%2075.5099%2057.8571%2076.6607C57.8571%2077.8116%2058.3143%2078.9153%2059.1281%2079.729C59.9419%2080.5428%2061.0456%2081%2062.1964%2081H70.875C73.5603%2081%2076.1357%2079.9333%2078.0345%2078.0345C79.9333%2076.1357%2081%2073.5603%2081%2070.875V62.1964ZM4.33929%2057.8571C5.49014%2057.8571%206.59385%2058.3143%207.40762%2059.1281C8.2214%2059.9419%208.67857%2061.0456%208.67857%2062.1964V70.875C8.67857%2071.2586%208.83096%2071.6265%209.10222%2071.8978C9.37348%2072.169%209.74138%2072.3214%2010.125%2072.3214H18.8036C19.9544%2072.3214%2021.0581%2072.7786%2021.8719%2073.5924C22.6857%2074.4062%2023.1429%2075.5099%2023.1429%2076.6607C23.1429%2077.8116%2022.6857%2078.9153%2021.8719%2079.729C21.0581%2080.5428%2019.9544%2081%2018.8036%2081H10.125C7.43968%2081%204.86435%2079.9333%202.96554%2078.0345C1.06674%2076.1357%200%2073.5603%200%2070.875L0%2062.1964C0%2061.0456%200.457173%2059.9419%201.27095%2059.1281C2.08472%2058.3143%203.18844%2057.8571%204.33929%2057.8571ZM62.1964%200C61.0456%200%2059.9419%200.457173%2059.1281%201.27095C58.3143%202.08472%2057.8571%203.18844%2057.8571%204.33929C57.8571%205.49014%2058.3143%206.59385%2059.1281%207.40762C59.9419%208.2214%2061.0456%208.67857%2062.1964%208.67857H70.875C71.2586%208.67857%2071.6265%208.83096%2071.8978%209.10222C72.169%209.37348%2072.3214%209.74138%2072.3214%2010.125V18.8036C72.3214%2019.9544%2072.7786%2021.0581%2073.5924%2021.8719C74.4062%2022.6857%2075.5099%2023.1429%2076.6607%2023.1429C77.8116%2023.1429%2078.9153%2022.6857%2079.729%2021.8719C80.5428%2021.0581%2081%2019.9544%2081%2018.8036V10.125C81%207.43968%2079.9333%204.86435%2078.0345%202.96554C76.1357%201.06674%2073.5603%200%2070.875%200H62.1964ZM40.5%2044.9897C35.281%2044.9894%2030.1867%2046.5849%2025.9002%2049.5621C21.6138%2052.5394%2018.3401%2056.7561%2016.5182%2061.6468C15.8702%2063.3767%2017.253%2065.0893%2019.0986%2065.0893H61.8898C63.7412%2065.0893%2065.1182%2063.3767%2064.476%2061.6468C62.6541%2056.7561%2059.3805%2052.5394%2055.094%2049.5621C50.8075%2046.5849%2045.719%2044.9894%2040.5%2044.9897ZM53.2749%2025.8101C53.2749%2029.202%2051.9274%2032.455%2049.5289%2034.8535C47.1305%2037.252%2043.8775%2038.5994%2040.4855%2038.5994C37.0936%2038.5994%2033.8406%2037.252%2031.4421%2034.8535C29.0437%2032.455%2027.6962%2029.202%2027.6962%2025.8101C27.6962%2022.4181%2029.0437%2019.1651%2031.4421%2016.7667C33.8406%2014.3682%2037.0936%2013.0207%2040.4855%2013.0207C43.8775%2013.0207%2047.1305%2014.3682%2049.5289%2016.7667C51.9274%2019.1651%2053.2749%2022.4181%2053.2749%2025.8101Z'%20fill='black'/%3e%3c/svg%3e" alt="Icon" class="icon" />
+      <h3>About</h3>
+    </div>
+    <div class="about-content section-content">
+      <div class="about-details">
+        <div class="about-text-box">
+          <p>Hey there! I'm Shanel Perera — a Computer Science enthusiast and lifelong learner driven by curiosity, creativity, and code. I specialize in Python, full-stack development, and have a growing passion for AI and machine learning. I love building impactful, human-centered solutions through clean code and thoughtful design.</p>
+          <p>As a freelancer, I offer software development, content writing, and graphic design — blending logic and aesthetics to help brands tell compelling stories. You’ll often find me debugging neural nets, sketching UI ideas, or exploring the next AI breakthrough.</p>
+          <p>I'm all about crafting intuitive user experiences, writing readable code, and designing standout visuals — always balancing creativity with logic in every project I take on.</p>
+          <p>When I'm not coding, I'm watching Formula 1, yelling at football matches, sparring at martial arts, or binging movies and TV shows. Let’s build something amazing together.</p>
+
+          <div class="about-tags-box">
+            <div class="tag-box">CS Undergraduate</div>
+            <div class="tag-box">Tech Enthusiast</div>
+            <div class="tag-box">Gamer</div>
+            <div class="tag-box">Design Tinkerer</div>
+            <div class="tag-box">Martial Artist</div>
+          </div>
+        </div>
+        <img src="./images/my_image.png" alt="Profile" class="about-image" />
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+    <div class="section-title skills-title">
+      <img src="data:image/svg+xml,%3csvg%20width='85'%20height='80'%20viewBox='0%200%2085%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.25%200H80.75C81.8772%200%2082.9582%200.468252%2083.7552%201.30175C84.5522%202.13524%2085%203.2657%2085%204.44444V75.5556C85%2076.7343%2084.5522%2077.8648%2083.7552%2078.6983C82.9582%2079.5318%2081.8772%2080%2080.75%2080H4.25C3.12283%2080%202.04183%2079.5318%201.2448%2078.6983C0.447766%2077.8648%200%2076.7343%200%2075.5556V4.44444C0%203.2657%200.447766%202.13524%201.2448%201.30175C2.04183%200.468252%203.12283%200%204.25%200ZM61.4763%2055.7156L76.5%2040L61.4763%2024.2844L55.4625%2030.5778L64.481%2040L55.4625%2049.4267L61.4763%2055.7156ZM20.519%2040L29.5375%2030.5733L23.528%2024.2844L8.5%2040L23.528%2055.7156L29.5375%2049.4222L20.519%2040ZM39.287%2062.2222L54.757%2017.7778H45.713L30.243%2062.2222H39.287Z'%20fill='black'/%3e%3c/svg%3e" alt="Icon" class="icon" />
+      <h3>Skills</h3>
+    </div>
+      <div class="skills-content section-content">
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://www.svgrepo.com/show/443351/brand-python.svg" alt="Python logo">
+              <p>Python</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="data:image/svg+xml,%3csvg%20width='115'%20height='115'%20viewBox='0%200%20115%20115'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_47_3206)'%3e%3cmask%20id='mask0_47_3206'%20style='mask-type:luminance'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='115'%20height='115'%3e%3cpath%20d='M0%200H114.277V114.277H0V0Z'%20fill='white'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_47_3206)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M23.6784%2093.7852L13.9363%2011.1489H99.6437L89.8969%2093.7757L56.7424%20102.965L23.6784%2093.7852ZM43.3768%2048.5507L42.4531%2038.1706H81.2357L82.1404%2028.0381H31.3825L34.1156%2058.688H69.2414L68.0653%2071.8298L56.7614%2074.8867H56.7519L45.4671%2071.8393L44.7433%2063.759H34.5632L35.9821%2079.672L56.7424%2085.4335L77.536%2079.672L80.0691%2051.2743L80.3167%2048.5555L43.3768%2048.5507Z'%20fill='black'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_47_3206'%3e%3crect%20width='114.277'%20height='114.277'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="HTML logo">
+              <p>HTML</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="data:image/svg+xml,%3csvg%20width='115'%20height='115'%20viewBox='0%200%20115%20115'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M57.3747%20103.146L24.3107%2093.9661L14.5638%2011.3298H100.271L90.5292%2093.9566L57.3747%20103.146ZM33.8337%2048.7364L34.7432%2058.8689H69.869L68.6929%2072.0107L57.389%2075.0676H57.3795L46.0947%2072.0202L45.3709%2063.9399H35.1955L36.6145%2079.8529L57.3747%2085.6144L78.1683%2079.8529L80.7014%2051.4552L80.949%2048.7364L82.7774%2028.219H32.0101L32.9338%2038.3562H71.6736L70.7498%2048.7364H33.8337Z'%20fill='black'/%3e%3c/svg%3e" alt="CSS logo">
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="data:image/svg+xml,%3csvg%20width='115'%20height='116'%20viewBox='0%200%20115%20116'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.39771%207.92944V107.921H107.39V7.92944H7.39771ZM60.9649%2085.6018C60.9649%2095.3354%2055.2153%20100.081%2046.8923%20100.081C39.3751%20100.081%2035.0116%2096.188%2032.7975%2091.4897L40.4486%2086.8584C41.924%2089.4765%2043.0444%2091.6906%2046.2651%2091.6906C48.9435%2091.6906%2051.1442%2090.4831%2051.1442%2085.7848V54.3543H60.9649V85.6018ZM83.1394%2099.8574C74.4147%2099.8574%2068.7767%2095.9202%2066.0247%2090.4831L73.6871%2086.0482C75.6958%2089.3381%2078.3184%2091.5299%2082.9497%2091.5299C86.8423%2091.5299%2089.1032%2089.8068%2089.1032%2087.1218C89.1032%2083.9011%2086.7753%2082.7605%2082.4788%2080.8723L80.1307%2079.8634C73.35%2076.9797%2068.8549%2073.355%2068.8549%2065.7016C68.8549%2058.6553%2074.2227%2053.5084%2082.6127%2053.5084C88.5877%2053.5084%2092.8797%2055.3654%2095.971%2060.8025L88.6412%2065.5141C87.0297%2062.6282%2085.2933%2061.4966%2082.6015%2061.4966C79.8495%2061.4966%2078.1041%2063.242%2078.1041%2065.5141C78.1041%2068.3331%2079.8495%2069.4736%2083.876%2071.219L86.224%2072.2257C94.2122%2075.6495%2098.7096%2079.1447%2098.7096%2086.9923C98.7118%2095.4515%2092.0673%2099.8574%2083.1394%2099.8574Z'%20fill='black'/%3e%3c/svg%3e" alt="JavaScript logo">
+              <p>JavaScript</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://www.svgrepo.com/show/327388/logo-react.svg" alt="React logo">
+              <p>React</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://www.svgrepo.com/show/314392/node.svg" alt="Node.js logo">
+              <p>Node.js</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Git-icon-black.svg" alt="Git logo">
+              <p>Git</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://www.svgrepo.com/show/394125/docker.svg" alt="Docker logo">
+              <p>Docker</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://www.svgrepo.com/show/473684/jupyter.svg" alt="Jupyter logo">
+              <p>Jupyter</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-content">
+              <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg" alt="Linux logo">
+              <p>Linux</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="section-title projects-title">
+      <img src="data:image/svg+xml,%3csvg%20width='92'%20height='83'%20viewBox='0%200%2092%2083'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_73_112'%20style='mask-type:luminance'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='92'%20height='83'%3e%3cpath%20d='M83.4%202.42249H8.6C4.95492%202.42249%202%205.69252%202%209.72631V73.0262C2%2077.06%204.95492%2080.33%208.6%2080.33H83.4C87.0451%2080.33%2090%2077.06%2090%2073.0262V9.72631C90%205.69252%2087.0451%202.42249%2083.4%202.42249Z'%20stroke='white'%20stroke-width='4'%20stroke-linejoin='round'/%3e%3cpath%20d='M2%209.72631C2%207.78922%202.69536%205.93146%203.9331%204.56173C5.17084%203.19199%206.84957%202.42249%208.6%202.42249H83.4C85.1504%202.42249%2086.8292%203.19199%2088.0669%204.56173C89.3046%205.93146%2090%207.78922%2090%209.72631V31.6378H2V9.72631Z'%20fill='white'%20stroke='white'%20stroke-width='4'/%3e%3cpath%20d='M10.7996%2017.0302C10.7996%2014.341%2012.7696%2012.161%2015.1996%2012.161C17.6297%2012.161%2019.5996%2014.341%2019.5996%2017.0302C19.5996%2019.7194%2017.6297%2021.8994%2015.1996%2021.8994C12.7696%2021.8994%2010.7996%2019.7194%2010.7996%2017.0302Z'%20fill='black'/%3e%3cpath%20d='M24.0005%2017.0302C24.0005%2014.341%2025.9705%2012.161%2028.4005%2012.161C30.8306%2012.161%2032.8005%2014.341%2032.8005%2017.0302C32.8005%2019.7194%2030.8306%2021.8994%2028.4005%2021.8994C25.9705%2021.8994%2024.0005%2019.7194%2024.0005%2017.0302Z'%20fill='black'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_73_112)'%3e%3cpath%20d='M-6.7998%20-17.0544H98.8002V99.8068H-6.7998V-17.0544Z'%20fill='black'/%3e%3c/g%3e%3c/svg%3e" alt="Icon" class="icon" />
+      <h3>Projects</h3>
+    </div>
+    <div class="projects-content section-content">
+      <div class="project-card">
+        <img src="https://github.com/shanelperera-exe/Typing-Speed-Test-GUI/raw/main/Screenshots/end.png" alt="Typing Speed Test Screenshot" class="project-image">
+        
+        <div class="project-info">
+          <div class="project-heading">
+            <h3 class="project-title">Typing Speed Test (GUI)</h3>
+            <div class="project-description">
+              <p>
+                A typing speed test application built with Python and Tkinter. It tracks words per minute (WPM), characters per minute (CPM), and accuracy while users type random words within a time limit. The app provides real-time feedback, displays results with a visual speed indicator, and includes a restart option.
+              </p>
+            </div>
+          </div>
+          <div class="project-tech-links">
+            <div class="tech-tags">
+              <span class="badge rounded-pill bg-dark text-white px-3 py-2 me-2">Python</span>
+              <span class="badge rounded-pill bg-dark text-white px-3 py-2">Tkinter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanelperera-exe/Typing-Speed-Test-GUI.git" target="_blank" class="icon-link" title="GitHub Repository">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+        <img src="https://github.com/shanelperera-exe/YahtzeeGame/raw/main/screenshot.png" alt="Typing Speed Test Screenshot" class="project-image">
+        
+        <div class="project-info">
+          <div class="project-heading">
+            <h3 class="project-title">C-based Yahtzee Game (CLI)</h3>
+            <div class="project-description">
+              <p>
+                A command-line version of the classic Yahtzee dice game, written in C. The game includes a single-player mode against a computer opponent, which follows a strategy for selecting scoring categories. The objective is to score as many points as possible by rolling dice and achieving specific combinations.
+              </p>
+            </div>
+          </div>
+          <div class="project-tech-links">
+            <div class="tech-tags">
+              <span class="badge rounded-pill bg-dark text-white px-3 py-2 me-2" >C</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanelperera-exe/YahtzeeGame.git" target="_blank" class="icon-link" title="GitHub Repository">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+        <img src="https://github.com/shanelperera-exe/Img-Watermarking-App/raw/main/screenshot.png" alt="Typing Speed Test Screenshot" class="project-image vertical-img">
+        
+        <div class="project-info">
+          <div class="project-heading">
+            <h3 class="project-title">Image Watermarking GUI App</h3>
+            <div class="project-description">
+              <p>
+                A simple desktop application built with Python, Tkinter, and Pillow that allows users to upload images and add watermarks in the form of text or logo images. The app supports choosing watermark positions, customizing text color, previewing, resetting, and saving the final watermarked image.
+              </p>
+            </div>
+          </div>
+          <div class="project-tech-links">
+            <div class="tech-tags">
+              <span class="badge rounded-pill bg-dark text-white px-3 py-2 me-2" style="margin-left: 2rem;">Python</span>
+              <span class="badge rounded-pill bg-dark text-white px-3 py-2 me-2">Pillow</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanelperera-exe/Img-Watermarking-App.git" target="_blank" class="icon-link" title="GitHub Repository">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="section-title contact-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send icon" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+</svg>
+      <h3>Contact</h3>
+    </div>
+
+    <div class="section-content contact-section">
+      <div class="contact-container">
+        <div class="contact-text-block">
+          <h1 class="contact-line-1">Excited <br> to know <br> more?</h1>
+          <h1 class="contact-line-2">Let's,<br> talk!</h1>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name
+              <input type="text" name="user_name" placeholder="Name" />
+            </label>
+
+            <label for="email">Email
+              <input type="text" name="user_email" placeholder="Email Address" />
+            </label>
+
+            <label for="message">Message
+              <textarea name="message" placeholder="Message" rows="10"></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-left">
+    <p class="footer-text">SHANEL<br>PERERA</p>
+  </div>
+
+  <div class="footer-center">
+    <p class="footer-copyright">
+      &copy; 2025 Shanel Perera. All rights reserved.
+    </p>
+  </div>
+
+  <ul class="footer-links">
+    <li>
+      <a href="https://github.com/shanelperera-exe" target="_blank" aria-label="GitHub">
+        <img src="data:image/svg+xml,%3csvg%20width='81'%20height='79'%20viewBox='0%200%2081%2079'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M40.1526%200C17.9683%200%200%2017.988%200%2040.1966C0%2057.9837%2011.4937%2073.0072%2027.4543%2078.3332C29.462%2078.6849%2030.2148%2077.479%2030.2148%2076.4239C30.2148%2075.4692%2030.1646%2072.3037%2030.1646%2068.9373C20.0763%2070.7963%2017.4664%2066.4752%2016.6633%2064.2141C16.2116%2063.0585%2014.2542%2059.491%2012.5477%2058.5364C11.1423%2057.7827%209.13472%2055.9236%2012.4975%2055.8733C15.6595%2055.8231%2017.9181%2058.7876%2018.671%2059.9935C22.2847%2066.0732%2028.0566%2064.3649%2030.3654%2063.3097C30.7167%2060.6969%2031.7707%2058.9383%2032.9251%2057.9334C23.9912%2056.9285%2014.6557%2053.4615%2014.6557%2038.0863C14.6557%2033.7149%2016.2116%2030.0972%2018.7713%2027.2835C18.3698%2026.2786%2016.9645%2022.1584%2019.1729%2016.6314C19.1729%2016.6314%2022.5356%2015.5762%2030.2148%2020.7515C33.427%2019.8471%2036.84%2019.3949%2040.253%2019.3949C43.666%2019.3949%2047.0789%2019.8471%2050.2911%2020.7515C57.9703%2015.526%2061.3331%2016.6314%2061.3331%2016.6314C63.5415%2022.1584%2062.1362%2026.2786%2061.7346%2027.2835C64.2944%2030.0972%2065.8503%2033.6647%2065.8503%2038.0863C65.8503%2053.5118%2056.4646%2056.9285%2047.5306%2057.9334C48.9862%2059.1896%2050.2409%2061.6014%2050.2409%2065.3698C50.2409%2070.7461%2050.1908%2075.0672%2050.1908%2076.4239C50.1908%2077.479%2050.9436%2078.7352%2052.9512%2078.3332C60.9235%2075.6413%2067.8512%2070.5133%2072.7585%2063.6716C77.6658%2056.8299%2080.3053%2048.6194%2080.3052%2040.1966C80.3052%2017.988%2062.3369%200%2040.1526%200Z'%20fill='black'/%3e%3c/svg%3e" alt="GitHub" class="social-icon" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/shanel-perera-635955313/" target="_blank" aria-label="LinkedIn">
+        <img src="data:image/svg+xml,%3csvg%20width='78'%20height='78'%20viewBox='0%200%2078%2078'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M71.7906%200.000538991H6.09873C5.36029%20-0.00965496%204.62707%200.12484%203.94093%200.396343C3.25478%200.667847%202.62917%201.07104%202.09981%201.5829C1.57046%202.09475%201.14772%202.70525%200.855756%203.37951C0.56379%204.05378%200.408308%204.77861%200.398193%205.51261V71.5804C0.408308%2072.3144%200.56379%2073.0392%200.855756%2073.7135C1.14772%2074.3877%201.57046%2074.9982%202.09981%2075.5101C2.62917%2076.0219%203.25478%2076.4251%203.94093%2076.6966C4.62707%2076.9681%205.36029%2077.1026%206.09873%2077.0924H71.7906C72.5291%2077.1026%2073.2623%2076.9681%2073.9485%2076.6966C74.6346%2076.4251%2075.2602%2076.0219%2075.7896%2075.5101C76.3189%2074.9982%2076.7417%2074.3877%2077.0336%2073.7135C77.3256%2073.0392%2077.4811%2072.3144%2077.4912%2071.5804V5.51261C77.4811%204.77861%2077.3256%204.05378%2077.0336%203.37951C76.7417%202.70525%2076.3189%202.09475%2075.7896%201.5829C75.2602%201.07104%2074.6346%200.667847%2073.9485%200.396343C73.2623%200.12484%2072.5291%20-0.00965496%2071.7906%200.000538991ZM23.782%2064.5265H12.1483V29.8351H23.782V64.5265ZM17.9652%2024.9783C16.3607%2024.9783%2014.822%2024.3448%2013.6875%2023.2171C12.553%2022.0894%2011.9156%2020.5599%2011.9156%2018.9651C11.9156%2017.3704%2012.553%2015.8409%2013.6875%2014.7132C14.822%2013.5855%2016.3607%2012.952%2017.9652%2012.952C18.8171%2012.8559%2019.6799%2012.9399%2020.497%2013.1982C21.314%2013.4566%2022.067%2013.8836%2022.7065%2014.4513C23.3461%2015.0189%2023.8578%2015.7145%2024.2081%2016.4924C24.5585%2017.2702%2024.7396%2018.1129%2024.7396%2018.9651C24.7396%2019.8174%2024.5585%2020.6601%2024.2081%2021.4379C23.8578%2022.2158%2023.3461%2022.9114%2022.7065%2023.479C22.067%2024.0467%2021.314%2024.4737%2020.497%2024.7321C19.6799%2024.9904%2018.8171%2025.0744%2017.9652%2024.9783ZM65.7411%2064.5265H54.1073V45.9088C54.1073%2041.2447%2052.4398%2038.1996%2048.2129%2038.1996C46.9047%2038.2091%2045.6309%2038.617%2044.5632%2039.3682C43.4954%2040.1194%2042.6849%2041.1779%2042.2409%2042.4011C41.9375%2043.3071%2041.806%2044.2612%2041.8531%2045.2149V64.4879H30.2194V29.7966H41.8531V34.6919C42.91%2032.8691%2044.4471%2031.3674%2046.2989%2030.3486C48.1508%2029.3297%2050.2471%2028.8323%2052.3623%2028.91C60.1181%2028.91%2065.7411%2033.8824%2065.7411%2044.5597V64.5265Z'%20fill='black'/%3e%3c/svg%3e" alt="LinkedIn" class="social-icon" />
+      </a>
+    </li>
+  </ul>
+</footer>
+</html>
